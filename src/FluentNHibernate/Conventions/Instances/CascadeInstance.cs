@@ -26,6 +26,11 @@ namespace FluentNHibernate.Conventions.Instances
             setter("save-update");
         }
 
+        public void SaveUpdateMerge()
+        {
+            setter("save-update,merge");
+        }
+
         public void Delete()
         {
             setter("delete");

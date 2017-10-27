@@ -25,6 +25,13 @@ namespace FluentNHibernate.Conventions.Helpers
                 instance => instance.DefaultCascade.SaveUpdate());
         }
 
+        public static IHibernateMappingConvention SaveUpdateMerge()
+        {
+            return new BuiltHibernateMappingConvention(
+                criteria => { },
+                instance => instance.DefaultCascade.SaveUpdateMerge());
+        }
+
         public static IHibernateMappingConvention Delete()
         {
             return new BuiltHibernateMappingConvention(

@@ -7,6 +7,7 @@ namespace FluentNHibernate.Conventions.Instances
         void All();
         void None();
         void SaveUpdate();
+        void SaveUpdateMerge();
         void Delete();
         void Merge();
     }

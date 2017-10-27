@@ -41,6 +41,15 @@ namespace FluentNHibernate.Mapping
 		}
 
         /// <summary>
+        /// Cascade saves and updates and merges
+        /// </summary>
+        public TParent SaveUpdateMerge()
+        {
+            setter("save-update,merge");
+            return parent;
+        }
+
+        /// <summary>
         /// Cascade deletes
         /// </summary>
 		public TParent Delete()

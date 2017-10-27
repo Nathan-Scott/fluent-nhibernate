@@ -7,6 +7,7 @@ namespace FluentNHibernate.Conventions.Inspections
         public static readonly Cascade AllDeleteOrphan = new Cascade("all-delete-orphan");
         public static readonly Cascade None = new Cascade("none");
         public static readonly Cascade SaveUpdate = new Cascade("save-update");
+        public static readonly Cascade SaveUpdateMerge = new Cascade("save-update,merge");
         public static readonly Cascade Delete = new Cascade("delete");
         public static readonly Cascade Merge = new Cascade("merge");
         public static readonly Cascade Replicate = new Cascade("replicate");
